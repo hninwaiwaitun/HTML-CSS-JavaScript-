@@ -28,6 +28,17 @@
         <button class="custom-btn" onclick="showChapter('chapter-6', this)">第６章</button>
         <button class="custom-btn" onclick="showChapter('chapter-7', this)">第７章</button>
     </div>
+    <div class="explanation">
+        HTML/CSS/JavaScriptの基本を学びました。<br>
+        HTMLで構造（文字・画像）、
+        CSSでデザイン（色・配置）、JavaScriptで動き（アニメーション・処理）を定義します。<br>
+        第２章：HTMLタグを使い方とCSSで見た目を調整する<br>
+        第３章：CSSでアニメーションを作る<br>
+        第４章：BootstrapでCSSフレームワークを作る<br>
+        第５章：document.writeメソッドの使い方<br>
+        第６章：イベントドリブンの基本を学びこと（現在の時間を表示する機能）<br>
+        第７章：Ajax、jQuery、Vue.jsについてデータ取得、追加などを学ぶ<br>
+    </div>
 
     <!-- 第２章 開始 -->
     <div class="chapter" id="chapter-2">
@@ -270,7 +281,6 @@
                     // var mydiv = document.getElementById("timer");
 
                     // mydiv.innerHTML = "クリック後";
-                    alert("Button clicked!");
                     var now = new Date();
                     var seconds = now.getSeconds();
                     seconds = addZero(seconds);
