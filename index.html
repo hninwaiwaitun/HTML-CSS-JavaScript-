@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width">
+    <title>JavaScript学習</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    </link>
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="button-container">
+        <button class="custom-btn" onclick="showChapter('chapter-2')">第２章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-3')">第３章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-4')">第４章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-5')">第５章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-6')">第６章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-7')">第７章</button>
+    </div>
+
+    <!-- 第２章 開始 -->
+    <div class="chapter" id="chapter-2">
+        <div class="explanation">
+            HTMLの基本タグの使い方、CSS 色・大きさ・配置などのデザインを指定することを学びました。<br>
+            ・見出しと説明文<br>
+            ・ラベルをクリックすると入力欄がフォーカスされる<br>
+            ・メールアドレス入力欄<br>
+            ・パスワード入力欄：入力した文字が「●●●」のように隠れる<br>
+            ・送信ボタン： フォームを送信するためのボタン（表示のみ、操作なし）<br>
+        </div>
+        <div class="content">
+            <h1>入会申し込み</h1>
+            <p>入会するには、次のフォームに必要事項をご記入ください。</p>
+            <div class="control">
+                <label for="mymail">メールアドレス<span class="required">必須</span></label>
+                <input id="mymail" type="email" name="mymail">
+            </div>
+            <div class="control">
+                <label for="passcode">パスワード<span class="required">必須</span></label>
+                <input id="passcode" type="password" name="passcode">
+            </div>
+            <div class="save">
+                <button type="submit">登録する</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- 第２章 終了 -->
+
+    <!-- 第３章 開始 -->
+    <div class="chapter" id="chapter-3">
+        <div class="explanation">
+            ヘッダにfont-family: 'Sriracha', cursiveを使用しているため、手書き風の柔らかいフォントになる<br>
+            floatは要素を左右に回り込ませて配置することができます。<br>
+            Order List「ol」でリストを作成し、「li」を並びストとの内容を細かく制御することが出来ます。<br>
+            transition 系プロパティを使っているので、画像にホバー時するとふわっと変化するアニメーション効果をつけられます。<br>
+            ・transition-property：どのプロパティをアニメーションさせるか<br>
+            ・transition-duration：アニメーションにかける時間<br>
+            ・transition-timing-function：動き方（速度の変化の仕方）<br>
+        </div>
+        <div class="containerCh3">
+            <header class="headerCh3">
+                <h1>COCOA</h1>
+            </header>
+            <div class="contentCh2">
+                <section class="information">
+                    <h1>イヤホンジャックの向こう側</h1>
+                    <p class="type">Album</p>
+                    <div class="description">
+                        <a href="#"><img src="img/sakura.png" alt="イヤホンジャックの向こう側の写真"></a>
+                        <p>COCOA 4枚目のアルバムとなる今作。ジャケットデザインに色鉛筆画家の「カタヒラジュンシ」氏を
+                            迎え、音楽と絵のコラボを実現させた一枚。</p>
+
+                        <p>HONDA CARS静岡CMタイアップの「キミのうた」をはじめ、完全書き下ろしの新曲３曲を含む全６曲を収録。</br>
+                            イヤホンジャックの向こう側に広がる世界を、ぜひご堪能ください。</p>
+                    </div>
+                </section>
+                <section class="songs">
+                    <h2>収録曲</h2>
+                    <ol class="clearfix">
+                        <li><a href="https://youtu.be/vjqTkOISzeY" target="_blank">C#</a></li>
+                        <li>ワンルームファッションショー</li>
+                        <li>ハッピータイム</li>
+                        <li>シャンディガフ</li>
+                        <li>僕は知らない</li>
+                        <li>キミのうた</li>
+                    </ol>
+                </section>
+            </div>
+            <footer>
+                &copy;COCOA
+            </footer>
+        </div>
+    </div>
+    <!-- 第３章 終了 -->
+
+    <!-- 第４章 開始 -->
+    <div class="chapter" id="chapter-4">
+        <div class="explanation">
+            Bootstrap を直接導入して、下記のことができるようになりました。<br>
+            .containerクラスでページ幅を適度に制限、左右に余白を付けます。<br>
+            .Bootstrap のグリッドシステムを使用して横並び、画面幅、サイズ調整できます。<br>
+            .form-groupはフォームの1項目をまとめるため使います。<br>
+            .checkboxクラスでチェックボックス、ラベルを 1行ずつ縦に並べて、見やすいフォームに整えます。<br>
+            .radio-inlineクラスを使用し、ラジオボタンの横並びをインライン表示にします。 <br>
+            .form-controlでBootstrap の入力欄デザインを設定します。<br>
+            .必須入力はrequiredクラスを使います。<br>
+        </div>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-md-8 col-sm-4 col-xs-6">
+                        <h1>
+                            ご利用アンケート
+                        </h1>
+                    </div>
+                    <div class="col-md-4 col-sm-8 col-xs-6 align-right">
+                        <a href="/">HOMEへ戻る</a>
+                    </div>
+                </div>
+            </header>
+        </div><!--container1-->
+        <hr>
+        <div class="container">
+            <form action="https://book.h2o-space.com/html/form.php" method="post" class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p>この度は、本書をご利用頂きありがとうございます。恐れ入りますが、以下のフォームにご記入
+                        頂き、送信して頂けると幸いです。
+                    </p>
+                    <div class="form-group">
+                        <label for="name">お名前<span class="label label-danger">必須</span></label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="例）山田　太郎" required>
+                        <label for="job">ご職業</label>
+                        <select id="job" name="job" class="form-control">
+                            <option value="">選択してください</option>
+                            <option value="会社員" selected>会社員</option>
+                            <option value="学生">学生</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>知りたい内容（複数回答可）</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="html">
+                                HTML
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="css">
+                                CSS
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="q1" value="javascript">
+                                JavaScript
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>理解度はいかがでしょうか？</label>
+                        <div>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" id="q2_1" value="1">理解できなかった
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" id="q2_2" value="2">だいたい理解できた
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" id="q2_3" value="3">理解できた
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="q2" id="q2_4" value="4">回答しない
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ご意見</label>
+                        <textarea name="message" id="message" rows="10" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">送信する</button>
+                    <button type="reset" value="リセット">リセット</button>
+                </div><!--col-sm-8-->
+            </form>
+        </div>
+        <hr>
+        <div class="container">
+            <footer>
+                <p>&copy; H20 space</p>
+            </footer>
+        </div><!--container2-->
+    </div>
+    <!-- 第４章 終了 -->
+
+    <!-- 第５章 開始 -->
+    <div class="chapter" id="chapter-5">
+        <div class="explanation">
+            document.write は基本的な出力方法<br>
+            ・「p」タグを使用し HTML に出力すること。<br>
+            ・文字列をそのまま出力すること 。<br>
+            ・数値の計算結果を出力すること。<br>
+            ・文字列と計算結果をつなげること。<br>
+            ・変数に値を入れて使うこと。<br>
+            ・日付を扱う（Date オブジェクト）こと。<br>
+            ・日付の「日」だけを取り出すこと。<br>
+        </div>
+        <header>
+            <h1>TODAY</h1>
+        </header>
+        <div class="container">
+            <script>
+                // 日付を表示する
+                document.write('<p class="date">2026-04-16</p>');
+                document.write('10+3の結果は');
+                document.write(10 + 3);
+                document.write('です');
+                document.write('10+4の結果は' + (10 + 4) + 'です');
+                var answer = 10 + 3;
+                document.write('10+3の結果は' + answer + 'です');
+                var today = new Date();
+                var newYear = new Date(2026, 1, 1);
+                document.write('<p>今日は' + today.getDate() + '日です</>');
+                document.write('<p>元日は' + newYear.getDate() + '日です</>');
+            </script>
+        </div><!-- container -->
+    </div>
+    <!-- 第５章 終了 -->
+    <!-- 第６章 開始 -->
+    <div class="chapter" id="chapter-6">
+        <div class="explanation">
+            stratボタンを押下すると、現在の時間（hour:minutes:second）を表示する。<br>
+            document.getElementByIdでボタン要素を取得し、btn.addEventListenerを使用してクリックイベントを設定しています。<br>
+            Date オブジェクトで現在の「時・分・秒」を取得し、innerHTMLで画面に時刻を表示するようにしています。<br>
+        </div>
+        <div class="container">
+            <p id="timer">00:00:00</p>
+
+            <!-- <h1 id = "idName">クリック前</h1> -->
+            <!-- <button id="btn">クリック</button> -->
+            <div>
+                <button id="start_stop" class="btn btn-lg btn-primary">START</button>
+            </div>
+
+            <script>
+                var btn = document.getElementById('start_stop');
+
+                btn.addEventListener('click', function () {
+                    // var mydiv = document.getElementById("timer");
+
+                    // mydiv.innerHTML = "クリック後";
+                    alert("Button clicked!");
+                    var now = new Date();
+                    var seconds = now.getSeconds();
+                    seconds = addZero(seconds);
+
+                    var minutes = now.getMinutes();
+                    minutes = addZero(minutes);
+
+                    var hours = now.getHours();
+                    hours = addZero(hours);
+
+                    document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+
+                }, false);
+                var addZero = function (value) {
+                    if (value < 10) {
+                        value = '0' + value;
+                    }
+                    return value;
+                }
+            </script>
+        </div>
+    </div>
+    <!-- 第６章 終了 -->
+
+    <!-- 第７章 開始 -->
+    <div class="chapter" id="chapter-7">
+        <div class="explanation">
+            スクロールでヘッダーを隠す・表示する<br>
+            section-1:z-indexは重なり順を制御するプロパティになり、大きい値ほど前面、小さい値ほど背面に表示されます。<br>
+            section-2:for構文を使って、データを要素として追加<br>
+            ・配列のデータを使って、JavaScriptで HTML要素（画像＋キャプション＋名前）を動的に生成し、ページに追加する。<br>
+            section-3:XMLHttpRequestによる Ajax<br>
+            ・Ajax 通信を行い、取得したJSON データから画像、キャプション、名前を動的に生成してページに追加する。<br>
+            section-4:jQuery の Ajax<br>
+             ・$.getJSON() を使って外部のJSON データを取得し、取得したデータをもとに画像、キャプション、名前を<br>
+               動的に生成してページに追加する。<br>
+            section-5:Vue jsの基本<br>
+             ・スクリプト タグのならURLを設定して、CDNからVue.js を読み込んでいます。<br>
+             ・イーエルキーワードでHTML要素を管理します。<br>
+             ・HTMLの反映するデータを作成します。<br>
+        </div>
+        <hr>
+        <br>
+        <header>
+            <h1>MY Photos</h1>
+        </header>
+        <div class="container">
+            <div id="img_unit">
+                <div class="photo">
+                    <img src="img/sakura.png">
+                    <div class="inner">
+                        <p>こっちは貫禄ありすぎ<span>sansaisan</span></p>
+                    </div>
+                </div><!--photo-->
+            </div><!--img_unit-->
+            <!-- for section-4 -->
+            <div id="img_unit_1">
+            </div>
+            <!-- for section-5 -->
+            <div id="vue_example">
+                {{ message}}
+            </div>
+        </div><!--container-->
+        <!-- for section-4 -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- for section-5 -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js'></script>
+        <script>
+            // headerの調整
+            let lastY = 0;
+            const header = document.querySelector("#chapter-7 header");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > lastY) {
+                    header.style.top = "-80px";   // 下スクロール → 隠す
+                } else {
+                    // alert(window.scrollY);
+                    header.style.top = "360px";    // 上スクロール → 表示
+                }
+                lastY = window.scrollY;
+            });
+
+            // section-1
+            var images = [
+                {
+                    "path": "img/img01.jpg",
+                    "name": "sansaisan",
+                    "caption": "section_3:こっちは貫禄ありすぎ"
+                },
+                {
+                    "path": "img/img02.jpg",
+                    "name": "yukky_13dream",
+                    "caption": "section_3:年明け富士山"
+                },
+                {
+                    "path": "img/img03.jpg",
+                    "name": "maako",
+                    "caption": "section_3:空と大地の境界線って、どのあたり？"
+                }
+            ];
+
+            // section-2
+            var img;
+            var caption;
+            var div;
+
+            for (var i = 0; i < images.length; i++) {
+                img = document.createElement('img');
+                img.setAttribute('src', images[i].path);
+                caption = document.createElement('div');
+                caption.className = 'inner';
+                caption.innerHTML = '<p>' + images[i].caption + '<span>' + images[i].name + '</span>' + '<span>' + "section_2" + '</span>' + '</p>';
+
+
+                div = document.createElement('div');
+                div.className = 'photo',
+                    div.appendChild(img);
+                div.appendChild(caption);
+                document.getElementById('img_unit').appendChild(div);
+            }
+
+            //section-3
+            var ajax = new XMLHttpRequest();
+            ajax.open('GET', 'https://h2o-space.com/htmlbook/images.php');
+            ajax.responseType = 'json';
+            ajax.send(null);
+
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState === XMLHttpRequest.DONE && ajax.status === 200) {
+                    for (var i = 0; i < this.response.length; i++) {
+                        var data = this.response[i];
+
+                        var img = document.createElement('img');
+                        img.setAttribute('src', data.path);
+
+                        var caption = document.createElement('div');
+                        caption.className = 'inner';
+                        caption.innerHTML = '<p>' + data.caption + '<span>' + data.name + '</span>' + '<span>' + "section_3" + '</span>' + '</p>';
+
+                        var div = document.createElement('div');
+                        div.className = 'photo',
+                            div.appendChild(img);
+                        div.appendChild(caption);
+                        document.getElementById('img_unit').appendChild(div);
+                    }
+                }
+            }
+
+            // section-4
+            // HTML・CSSの内容を変更・取得する
+            // $('#img_unit_1').html('ここに、画像リストが表示されます')
+            // alert($('#img_unit_1').html());
+            $('#img_unit_1').css('margin-top', '100px');
+            // Ajax通信をしよう getJSONメソッド
+            $.getJSON('https://h2o-space.com/htmlbook/images.php', function (data) {
+                //alert('データを受信しました。');
+                for (var i = 0; i < data.length; i++) {
+                    $('<div class="photo"></div>')
+                        .append('<img src="' + data[i].path + ' ">')
+                        .append('<div class="inner"><p>' + data[i].caption + '<span>' + data[i].name + '</span>' + '<span>' + "section_4" + '</span>' + '</p>' + '</div>')
+                        .appendTo('#img_unit_1');
+                }
+            });
+
+            // section-5
+            var vue_example = new Vue({
+                el: '#vue_example',
+
+                data: {
+                    message: 'Hello Vue.js!',
+                },
+            })
+        </script>
+        <!-- 第７章 終了 -->
+    </div>
+
+    <script>
+        document.getElementById("chapter-2").style.display = "none";
+        document.getElementById("chapter-3").style.display = "none";
+        document.getElementById("chapter-4").style.display = "none";
+        document.getElementById("chapter-5").style.display = "none";
+        document.getElementById("chapter-6").style.display = "none";
+        document.getElementById("chapter-7").style.display = "none";
+
+        function showChapter(chapterId) {
+            const screens = document.querySelectorAll('.chapter');
+            screens.forEach(screen => {
+                screen.style.display = 'none';
+            });
+
+            document.getElementById(chapterId).style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
