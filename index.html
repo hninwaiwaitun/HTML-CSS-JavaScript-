@@ -28,7 +28,7 @@
         <button class="custom-btn" onclick="showChapter('chapter-6', this)">第６章</button>
         <button class="custom-btn" onclick="showChapter('chapter-7', this)">第７章</button>
     </div>
-    <div class="explanation">
+    <div class="summary">
         HTML/CSS/JavaScriptの基本を学びました。<br>
         HTMLで構造（文字・画像）、
         CSSでデザイン（色・配置）、JavaScriptで動き（アニメーション・処理）を定義します。<br>
@@ -479,7 +479,13 @@
             });
 
             const targetChapter = document.getElementById(chapterId);
-            if (targetChapter) targetChapter.style.display = 'block';
+            if (targetChapter) {
+                targetChapter.style.display = 'block';
+            }
+            const hidSummary = document.querySelectorAll('.summary');
+            hidSummary.forEach(hidden => {
+                hidden.style.display = 'none';
+            });
 
             const buttons = document.querySelectorAll('.custom-btn');
             buttons.forEach(btn => {
