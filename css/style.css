@@ -1,20 +1,26 @@
 @import url(sanitize.css);
 @import url('https://fonts.googleapis.com/css?family=Sriracha');
+
 #button-container {
-  text-align: center;
+    text-align: center;
 }
 
 .custom-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: #0c0b0b;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-   width: 10%;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0c0b0b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 10%;
+}
+
+.custom-btn.active {
+    background-color: #69aaf0;
+    color: rgb(32, 6, 149);
 }
 
 /* 第２章 開始 */
@@ -43,6 +49,7 @@
     border: 1px solid #d1d1d1;
     padding: 30px;
 }
+
 #chapter-2 input {
     border-bottom: 1px solid #ec0d0d;
     font-size: 1.2em;
@@ -76,6 +83,7 @@
     background-color: #fee;
     font-weight: bold;
 }
+
 /* 第２章 終了 */
 
 /* 第３章 開始 */
@@ -88,33 +96,38 @@
 }
 
 #chapter-3 body {
-     font-size: 14px;
-     background-color: #f0f0f0;
-     padding: 10px;
-     color: #666;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: #666;
 }
+
 #chapter-3 .containerCh3 {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
+
 #chapter-3 .headerCh3 {
     background-color: #422814;
     padding: 5px;
-    color:#fff;
+    color: #fff;
     text-align: center;
 }
+
 #chapter-3 header h1 {
-    margin:0;
+    margin: 0;
     font-size: 12px;
-    font-weight: normal;  
-    font-family: 'Sriracha', cursive ;
+    font-weight: normal;
+    font-family: 'Sriracha', cursive;
 }
+
 #chapter-3 .information h1 {
     font-size: 18px;
     margin: 0 10px 10px 0;
     /* float: left; */
 }
+
 #chapter-3 .information .type {
     display: inline;
     background-color: #e35a4d;
@@ -122,15 +135,17 @@
     font-size: 80%;
     color: #fff;
 }
+
 #chapter-3 .contentCh2 {
     background-color: #fff;
     padding: 20px;
 }
 
-#chapter-3 .songs{
+#chapter-3 .songs {
     margin: 0 0 20px;
 }
-#chapter-3 .songs h2{
+
+#chapter-3 .songs h2 {
     clear: left;
     font-size: 100%;
     font-weight: normal;
@@ -138,30 +153,36 @@
     background-color: #e6e4dd;
     padding: 5px 10px;
 }
+
 #chapter-3 .songs ol {
     padding: 0;
     margin: 0;
     list-style: decimal inside;
 }
+
 #chapter-3 .songs li {
     border-bottom: 1px solid #ccc;
     width: inherit;
     float: none;
     padding: 5px 10px;
 }
+
 #chapter-3 .clearfix::after {
     content: " ";
     display: table;
     clear: both;
 }
+
 #chapter-3 a {
     color: #666;
     /* text-decoration: none; */
 }
+
 #chapter-3 footer {
     text-align: center;
     font-size: 80%;
 }
+
 #chapter-3 @media only screen and (max-width:600px) {
     .description img {
         float: none;
@@ -170,6 +191,7 @@
     }
 
 }
+
 #chapter-3 .description img {
     float: left;
     margin: 0 10px 10px 0;
@@ -179,9 +201,11 @@
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 #chapter-3 .description img:hover {
     opacity: .5;
 }
+
 /* 第３章 終了 */
 
 /* 第４章 開始 */
@@ -192,23 +216,28 @@
     border: 1px solid #817f7f;
     padding: 10px;
 }
-#chapter-4 header{
+
+#chapter-4 header {
     margin-top: 30px;
     color: #2E99A9;
 }
-#chapter-4 hr{
+
+#chapter-4 hr {
     border-width: 3px;
     border-color: #a92e61;
     margin: 30px 0;
 }
-#chapter-4 h1{
+
+#chapter-4 h1 {
     font-size: 18px;
     font-weight: bold;
     margin: 0;
 }
-#chapter-4 .align-right{
+
+#chapter-4 .align-right {
     text-align: right;
 }
+
 /* 第４章 終了 */
 
 /* 第５章 開始 */
@@ -220,14 +249,16 @@
     padding: 10px;
 }
 
-#chapter-5 body{
+#chapter-5 body {
     font-family: Arial;
     text-align: center;
 }
-#chapter-5 header{
+
+#chapter-5 header {
     margin-bottom: 100px;
 }
-#chapter-5 h1{
+
+#chapter-5 h1 {
     background-color: #000;
     color: #fff;
     margin: 0;
@@ -235,10 +266,12 @@
     font-size: 18px;
     text-align: center;
 }
+
 #chapter-5 .date {
     font-size: 300%;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 /* 第５章 終了 */
 
 /* 第６章 開始 */
@@ -255,6 +288,7 @@
     max-width: 600px;
     margin: 30px auto;
 }
+
 #chapter-6 #timer {
     font-size: 36px;
     border: 1px solid #ccc;
@@ -265,9 +299,11 @@
     border-radius: 3px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
-#chapter-6 .btn{
+
+#chapter-6 .btn {
     width: 100%;
 }
+
 /* 第６章 終了 */
 
 /* 第７章 開始 */
@@ -278,53 +314,63 @@
     border: 1px solid #817f7f;
     padding: 10px;
 }
-#chapter-7 body{
+
+#chapter-7 body {
     margin: 0;
     padding: 0;
     background-color: rgba(26, 25, 229, 0.06);
 }
+
 #chapter-7 .container {
     max-width: 600px;
     margin: 0 auto;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, .3);
 }
+
 #chapter-7 img {
     width: 100%;
     margin: 0;
     vertical-align: top;
 }
-#chapter-7 header{
+
+#chapter-7 header {
     background-color: #007acc;
     color: #fff;
     position: fixed;
-    top: 360px;
+    top: 390px;
     width: 100%;
     z-index: 100;
     /* transform: translateX(25%); */
 }
-#chapter-7 header h1{
+
+#chapter-7 header h1 {
     margin: 0;
     font-size: 25px;
     padding: 5px;
     text-align: center;
-    font-family:'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-#chapter-7 .photo{
+
+#chapter-7 .photo {
     position: relative;
 }
-#chapter-7 .photo .inner{
+
+#chapter-7 .photo .inner {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
     font-size: 10px;
     color: #fff;
     margin: 0;
 }
-#chapter-7 .inner p{
+
+#chapter-7 .inner p {
     padding: 20px;
 }
-#chapter-7 .inner span{
+
+#chapter-7 .inner span {
     margin-left: 10px;
 }
+
 /* 第７章 終了 */

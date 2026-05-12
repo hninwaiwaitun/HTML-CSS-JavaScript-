@@ -21,23 +21,27 @@
 
 <body>
     <div id="button-container">
-        <button class="custom-btn" onclick="showChapter('chapter-2')">第２章</button>
-        <button class="custom-btn" onclick="showChapter('chapter-3')">第３章</button>
-        <button class="custom-btn" onclick="showChapter('chapter-4')">第４章</button>
-        <button class="custom-btn" onclick="showChapter('chapter-5')">第５章</button>
-        <button class="custom-btn" onclick="showChapter('chapter-6')">第６章</button>
-        <button class="custom-btn" onclick="showChapter('chapter-7')">第７章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-2', this)">第２章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-3', this)">第３章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-4', this)">第４章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-5', this)">第５章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-6', this)">第６章</button>
+        <button class="custom-btn" onclick="showChapter('chapter-7', this)">第７章</button>
     </div>
 
     <!-- 第２章 開始 -->
     <div class="chapter" id="chapter-2">
         <div class="explanation">
             HTMLの基本タグの使い方、CSS 色・大きさ・配置などのデザインを指定することを学びました。<br>
-            ・見出しと説明文<br>
-            ・ラベルをクリックすると入力欄がフォーカスされる<br>
-            ・メールアドレス入力欄<br>
-            ・パスワード入力欄：入力した文字が「●●●」のように隠れる<br>
-            ・送信ボタン： フォームを送信するためのボタン（表示のみ、操作なし）<br>
+            (1)HTMLタグ<br>
+            　・見出し＜h1＞タグ<br>
+            　・説明文＜p＞タグ<br>
+            (2)ラベルをクリックすると入力欄がフォーカスされる<br>
+            (3)inputタグ<br>
+            　・メールアドレス入力欄：「＠」が含まれたアドレスを入力する<br>
+            　・パスワード入力欄：入力した文字が「●●●」のように隠れる<br>
+            (4)button<br>
+            　・登録ボタン： フォームを送信するためのボタン（表示のみ、操作なし）<br>
         </div>
         <div class="content">
             <h1>入会申し込み</h1>
@@ -61,10 +65,13 @@
     <!-- 第３章 開始 -->
     <div class="chapter" id="chapter-3">
         <div class="explanation">
-            ヘッダにfont-family: 'Sriracha', cursiveを使用しているため、手書き風の柔らかいフォントになる<br>
-            floatは要素を左右に回り込ませて配置することができます。<br>
-            Order List「ol」でリストを作成し、「li」を並びストとの内容を細かく制御することが出来ます。<br>
-            transition 系プロパティを使っているので、画像にホバー時するとふわっと変化するアニメーション効果をつけられます。<br>
+            CSSの使い方を学びました。<br>
+            (1)CSSを用いてフォントを変更できることを学びました。<br>
+            　・font-family: 'Sriracha', cursiveを使用して、手書き風の柔らかいフォントにしています。<br>
+            (2)floatは要素を左右に回り込ませて配置することができます。<br>
+            　花の画像を左側に配置し、テキストを右側に回り込ませています。<br>
+            (3)Order List「ol」でリストを作成し、「li」を並びストとの内容を細かく制御することが出来ます。<br>
+            (4)transition 系プロパティを使っているので、画像にホバー時するとふわっと変化するアニメーション効果をつけられます。<br>
             ・transition-property：どのプロパティをアニメーションさせるか<br>
             ・transition-duration：アニメーションにかける時間<br>
             ・transition-timing-function：動き方（速度の変化の仕方）<br>
@@ -108,14 +115,16 @@
     <!-- 第４章 開始 -->
     <div class="chapter" id="chapter-4">
         <div class="explanation">
-            Bootstrap を直接導入して、下記のことができるようになりました。<br>
-            .containerクラスでページ幅を適度に制限、左右に余白を付けます。<br>
-            .Bootstrap のグリッドシステムを使用して横並び、画面幅、サイズ調整できます。<br>
-            .form-groupはフォームの1項目をまとめるため使います。<br>
-            .checkboxクラスでチェックボックス、ラベルを 1行ずつ縦に並べて、見やすいフォームに整えます。<br>
-            .radio-inlineクラスを使用し、ラジオボタンの横並びをインライン表示にします。 <br>
-            .form-controlでBootstrap の入力欄デザインを設定します。<br>
-            .必須入力はrequiredクラスを使います。<br>
+            Bootstrapを直接導入して、下記のことができるようになりました。<br>
+            ・containerクラスでページ幅を適度に制限、左右に余白を付けます。<br>
+            ・Bootstrapのグリッドシステムを使用して横並び、画面幅、サイズ調整できます。<br>
+            ・form-groupはフォームの1項目をまとめるため使います。<br>
+            ・checkboxクラスでチェックボックス、ラベルを 1行ずつ縦に並べて、見やすいフォームに整えます。<br>
+            ・radio-inlineクラスを使用し、ラジオボタンの横並びをインライン表示にします。 <br>
+            ・form-controlでBootstrap の入力欄デザインを設定します。<br>
+            ・必須入力はrequiredクラスを使います。<br>
+            ・「お名前」テキストボックスを入力せず、送信ボタンを押下すると必須チェックを行います。<br>
+            ・リセットボタンを押下すると画面上で入力した内容がクリアされます。<br>
         </div>
         <div class="container">
             <header>
@@ -208,8 +217,8 @@
     <!-- 第５章 開始 -->
     <div class="chapter" id="chapter-5">
         <div class="explanation">
-            document.write は基本的な出力方法<br>
-            ・「p」タグを使用し HTML に出力すること。<br>
+            document.writeメソッドについて学びました。<br>
+            ・「p」タグを使用しHTMLに出力すること。<br>
             ・文字列をそのまま出力すること 。<br>
             ・数値の計算結果を出力すること。<br>
             ・文字列と計算結果をつなげること。<br>
@@ -241,7 +250,7 @@
     <!-- 第６章 開始 -->
     <div class="chapter" id="chapter-6">
         <div class="explanation">
-            stratボタンを押下すると、現在の時間（hour:minutes:second）を表示する。<br>
+            STARTボタンを押下すると、現在の時間「時・分・秒」を表示する仕組みを作りました。<br>
             document.getElementByIdでボタン要素を取得し、btn.addEventListenerを使用してクリックイベントを設定しています。<br>
             Date オブジェクトで現在の「時・分・秒」を取得し、innerHTMLで画面に時刻を表示するようにしています。<br>
         </div>
@@ -289,19 +298,21 @@
     <!-- 第７章 開始 -->
     <div class="chapter" id="chapter-7">
         <div class="explanation">
-            スクロールでヘッダーを隠す・表示する<br>
-            section-1:z-indexは重なり順を制御するプロパティになり、大きい値ほど前面、小さい値ほど背面に表示されます。<br>
-            section-2:for構文を使って、データを要素として追加<br>
+            Ajax通信、jQuery、Vue.jsの基本を学びました。<br>
+            ヘッダ<br>
+            ・スクロールでヘッダーを隠す・表示する機能を作りました。<br>
+            ・下スクロール時にはヘッダーを隠し、上スクロール時にヘッダーを表示させます。<br>
+            section-1：z-indexを使用し、ヘッダーを画像の前面に表示するようにしています。<br>
+            section-2：for構文を使って、データを要素として追加する<br>
             ・配列のデータを使って、JavaScriptで HTML要素（画像＋キャプション＋名前）を動的に生成し、ページに追加する。<br>
-            section-3:XMLHttpRequestによる Ajax<br>
-            ・Ajax 通信を行い、取得したJSON データから画像、キャプション、名前を動的に生成してページに追加する。<br>
-            section-4:jQuery の Ajax<br>
-             ・$.getJSON() を使って外部のJSON データを取得し、取得したデータをもとに画像、キャプション、名前を<br>
-               動的に生成してページに追加する。<br>
-            section-5:Vue jsの基本<br>
-             ・スクリプト タグのならURLを設定して、CDNからVue.js を読み込んでいます。<br>
-             ・イーエルキーワードでHTML要素を管理します。<br>
-             ・HTMLの反映するデータを作成します。<br>
+            section-3：XMLHttpRequestによるAjax<br>
+            ・Ajax通信を行い、取得したJSONデータから画像、キャプション、名前を動的に生成してページに追加する。<br>
+            section-4：jQueryのAjax<br>
+            ・$.getJSON()を使って外部のJSONデータを取得し、取得したデータをもとに画像、キャプション、名前を<br>
+            動的に生成してページに追加する。<br>
+            section-5：Vue.jsの基本<br>
+            ・スクリプトタグでURLを設定して、CDNからVue.jsを読み込んでいます。<br>
+            ・{{ message }} という記述（マスタッシュ構文）を使うことで、JavaScript側のデータをHTMLに直接埋め込めます。<br>
         </div>
         <hr>
         <br>
@@ -317,11 +328,19 @@
                     </div>
                 </div><!--photo-->
             </div><!--img_unit-->
+            <div id="img_unit_2">
+                <p style="color: red; font-size: 20px; font-weight: bold;">section-2</p>
+            </div>
+            <div id="img_unit_3">
+                <p style="color: red; font-size: 20px; font-weight: bold;">section-3</p>
+            </div>
             <!-- for section-4 -->
-            <div id="img_unit_1">
+            <div id="img_unit_4">
+                <p style="color: red; font-size: 20px; font-weight: bold;">section-4</p>
             </div>
             <!-- for section-5 -->
             <div id="vue_example">
+                <p style="color: red; font-size: 20px; font-weight: bold;">section-5</p>
                 {{ message}}
             </div>
         </div><!--container-->
@@ -339,7 +358,7 @@
                     header.style.top = "-80px";   // 下スクロール → 隠す
                 } else {
                     // alert(window.scrollY);
-                    header.style.top = "360px";    // 上スクロール → 表示
+                    header.style.top = "390px";    // 上スクロール → 表示
                 }
                 lastY = window.scrollY;
             });
@@ -349,17 +368,17 @@
                 {
                     "path": "img/img01.jpg",
                     "name": "sansaisan",
-                    "caption": "section_3:こっちは貫禄ありすぎ"
+                    "caption": "こっちは貫禄ありすぎ"
                 },
                 {
                     "path": "img/img02.jpg",
                     "name": "yukky_13dream",
-                    "caption": "section_3:年明け富士山"
+                    "caption": "年明け富士山"
                 },
                 {
                     "path": "img/img03.jpg",
                     "name": "maako",
-                    "caption": "section_3:空と大地の境界線って、どのあたり？"
+                    "caption": "空と大地の境界線って、どのあたり？"
                 }
             ];
 
@@ -380,7 +399,7 @@
                 div.className = 'photo',
                     div.appendChild(img);
                 div.appendChild(caption);
-                document.getElementById('img_unit').appendChild(div);
+                document.getElementById('img_unit_2').appendChild(div);
             }
 
             //section-3
@@ -405,16 +424,13 @@
                         div.className = 'photo',
                             div.appendChild(img);
                         div.appendChild(caption);
-                        document.getElementById('img_unit').appendChild(div);
+                        document.getElementById('img_unit_3').appendChild(div);
                     }
                 }
             }
 
             // section-4
-            // HTML・CSSの内容を変更・取得する
-            // $('#img_unit_1').html('ここに、画像リストが表示されます')
-            // alert($('#img_unit_1').html());
-            $('#img_unit_1').css('margin-top', '100px');
+            // $('#img_unit_4').css('margin-top', '100px');
             // Ajax通信をしよう getJSONメソッド
             $.getJSON('https://h2o-space.com/htmlbook/images.php', function (data) {
                 //alert('データを受信しました。');
@@ -422,7 +438,7 @@
                     $('<div class="photo"></div>')
                         .append('<img src="' + data[i].path + ' ">')
                         .append('<div class="inner"><p>' + data[i].caption + '<span>' + data[i].name + '</span>' + '<span>' + "section_4" + '</span>' + '</p>' + '</div>')
-                        .appendTo('#img_unit_1');
+                        .appendTo('#img_unit_4');
                 }
             });
 
@@ -446,13 +462,21 @@
         document.getElementById("chapter-6").style.display = "none";
         document.getElementById("chapter-7").style.display = "none";
 
-        function showChapter(chapterId) {
+        function showChapter(chapterId, btnElement) {
             const screens = document.querySelectorAll('.chapter');
             screens.forEach(screen => {
                 screen.style.display = 'none';
             });
 
-            document.getElementById(chapterId).style.display = 'block';
+            const targetChapter = document.getElementById(chapterId);
+            if (targetChapter) targetChapter.style.display = 'block';
+
+            const buttons = document.querySelectorAll('.custom-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            btnElement.classList.add('active');
         }
     </script>
 
